@@ -1,0 +1,254 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bdy {
+    height: 640px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+}
+
+.sec1 {
+    height: auto;
+    width: 49%;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+}
+
+.sec2 {
+    height: 600px;
+    width: 49%;
+    background-color: gray;
+    position: absolute;
+    right: 0;
+}
+
+.sec1 h5 {
+    font-size: 20px;
+    margin: 10px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.glance {
+    background-color: white;
+    height: 130px;
+    width: 100%;
+    /* margin-left: 20px; */
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid gray;
+}
+
+.glance h6 {
+    font-size: 17px;
+    padding: 8px;
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.a1 {
+    float: right;
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.wpform {
+    background-color: white;
+    height: 640px;
+    width: 100%;
+    /* margin-left: 20px; */
+    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid gray;
+}
+
+.wpform h6 {
+    font-size: 17px;
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+
+.wpimg {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    background: url("https://cdn.statcdn.com/Statistic/660000/664729-blank-754.png");
+    text-align: center;
+    position: absolute;
+    top: 20;
+    border-bottom: 2px solid gray;
+}
+
+.divform {
+    background-color: white;
+    opacity: 1;
+    text-align: center;
+    height: 200px;
+    width: 350px;
+    margin-top: 120px;
+    margin-left: 130px;
+    padding-top: 50px;
+    box-shadow: 0px 0px 30px black;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+div p {
+    font-size: 13px;
+}
+
+div button {
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: #e27730;
+    padding: 13px;
+    color: white;
+    padding: 11px 20px 11px 15px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.footer {
+    color: black;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer h5 {
+    margin-bottom: 8px;
+    font-size: 15px;
+    padding-left: 0px;
+}
+
+.footer p {
+    font-size: 15px;
+    padding: 7px;
+}
+
+.activity {
+    background-color: red;
+    width: 100%;
+    height: 300px;
+    /* margin-left: 50px; */
+}
+
+
+/* Aishvarya Code */
+
+
+/* Site Health Status */
+
+.sitehealth {
+    border: 1px solid gray;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.sitehealth h4 {
+    font-size: 17px;
+    border-bottom: 1px solid gray;
+    padding: 8px 0px;
+    padding-left: 8px
+}
+
+.circle {
+    border: 2px solid green;
+    border-right: 1px solid gray;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 43px;
+    left: 267px;
+}
+
+.good {
+    font-size: 16px;
+    text-align: center;
+    margin: 7px 0px 20px 0px;
+    height: 10px;
+}
+
+.sitehealth p {
+    font-size: 15px;
+    margin-left: px;
+    line-height: 20px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
+
+.quickdraft {
+    margin-top: 42px;
+    border: 1px solid lightgray;
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.quickdraft h4 {
+    border-bottom: 2px solid gray;
+    padding: 8px;
+}
+
+form label {
+    padding: 5px 5px;
+}
+
+.title {
+    width: 100%;
+    height: 26px;
+    border-radius: 6px;
+    outline-style: none;
+}
+
+form {
+    margin: 10px 8px;
+}
+
+.content {
+    height: 100px;
+    width: 100%;
+}
+
+.savedraftbutton {
+    height: 35px;
+    width: auto;
+    background-color: #e27730;
+    margin: 2px;
+    padding: 2px 10px;
+}
+
+
+/* WooCommerce Recent Review */
+
+.woocommerce {
+    border: 2px solid grey;
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+}
+
+div h4 {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+div p {
+    font-size: 15px;
+    padding: 10px 5px;
+}
