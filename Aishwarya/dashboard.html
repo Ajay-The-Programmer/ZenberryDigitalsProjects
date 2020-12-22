@@ -1,0 +1,55 @@
+
+    <style>
+    
+    .Quickdraft{
+        border:2px solid gray;
+         padding: 10px;
+         height: 300px;
+         width: 330px;
+                  
+
+    }
+
+    .title{
+      height: 30px;
+      width: 300px;
+
+
+    }
+
+    .Content{
+height:100px ;
+width: 300px;
+
+    }
+    .savedraft{
+        height: 30px;
+        width: 100px;
+background-color: rgb(44, 203, 243);
+    }
+</style>
+
+
+<html>
+    <body>
+        
+<title>Dashboard</title>
+<div class="Quickdraft">
+    
+    <h4>Quick Draft</h4>
+    <hr>
+
+    <form action="/action_page.php">
+        <label  for="fname">Title</label><br>
+        <input class="title" type="text" id="fname" name="fname" value=""><br><br>
+        <label for="lname">Content</label><br>
+        
+ <input class="content" type="text" id="lname" name="lname" value="What's in your mind?"><br><br>
+        
+ <button class ="savedraft" type="submit" value="save draft"> Save Draft</button>
+      </form> 
+    </div>
+
+    </body>
+
+</html>

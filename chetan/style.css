@@ -1,0 +1,119 @@
+.dropdown:hover .dropdown-menu{
+    display: block;  
+    
+}
+#mynav ul li:hover{
+    background: gray;
+}
+.navbar{
+    padding-left:0 ;
+    padding: 0;
+    height: 55px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+#menu{
+    padding-left: 0.5rem;   
+}
+a{
+    font-size: 20px;
+}
+
+/*############ vertical menbar css style ###########*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'poppins',sans-serif;
+}
+.vertical{
+    width: 50px;
+    position: absolute;
+    background: #343a40;
+    border-right: 10px;
+    font-size:20px ;
+    transition: 0.5sec; 
+    height: 100%;
+    
+}
+.vertical ul  li:hover{
+     width: 100%;
+}
+.vertical ul li:hover{
+    background: gray;   
+}
+.vertical ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    width: 100%;
+}
+.vertical ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;   
+}
+.vertical ul li:hover{
+    background: gray;  
+}
+.vertical ul li a{  
+    align-items: center;
+    overflow: hidden;
+    font-family: arial;
+    font-size: 1.15em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 7px ;
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+} 
+.vertical ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 45px;   
+}
+.vertical ul li a .icon img{
+    font-size: 24px;
+}
+.vertical ul li a .title{
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+.vertical ul li a:hover{
+    color: lightgray;    
+}
+.vertical ul ul{
+    position: absolute;
+    left: 100%;
+    width: 200px;
+    background: #007bff;
+    top: 0;
+    display: none;  
+}
+.vertical ul ul a{
+    color: black;
+}
+.vertical ul .dropdown{
+    position: relative;
+    
+}
+.vertical ul .dropdown:hover ul{
+    display: initial;   
+    padding: .5rem 0;
+}
+.vertical ul ul a:hover{
+    background: white;
+    color: black;  
+    
+}
+.vertical.active{
+    width: 250px;
+}
+
