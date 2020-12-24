@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/f7b0edd311.js" crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/home/ajaydevkar/ZenberryDigitalsProjects/Files/bootstrap-5.0.0-beta1-dist/css/bootstrap.css">
+    <!-- for the grid system for rows and colums-->
+    <!-- <link rel="stylesheet" href="/home/ajaydevkar/ZenberryDigitalsProjects/Files/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css"> -->
+    <!-- it will take bootstrap style for our project-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="worldpresshome.css">
+    <!--it will override above styles if we want-->
+
+</head>
+
+<body>
+    <div class="vertpage">
+        <section class="section">
+
+
+            <div class="bdy">
+
+
+                <!-- Left Part Of DashBoard Page -->
+
+                <div class="sec1">
+
+
+                    <h5>Dashboard</h5>
+                    <div class="glance">
+                        <h4>At a Glance</h4>
+                        <a href="#" class="a"> Post</a>
+                        <a href="#" class="a1"> Pages</a>
+                        <br/><br/>
+                        <a href="#" class="a"> Comment</a>
+                    </div>
+
+                    <div class="wpform">
+                        <h6>WPForm</h6>
+                        <div class="wpimg">
+
+                            <div class="divform">
+                                <h4>View all Form Entries inside <br/> WordPress Dashboard</h4>
+                                <p>Form entries reports are not available.
+                                    <p>
+                                        Form entries are not stored in Lite.
+                                    </p>
+                                    <p>
+                                        Upgrade to Pro and get access to the reports.
+                                    </p>
+                                    <button> Upgrade to WPForms Pro </button>
+                            </div>
+                        </div>
+                        <div class="footer">
+
+                            <h5>Total Entries by Form</h5>
+                            <hr>
+                            <p>Blank Form</p>
+                            <hr>
+                            <p>Recommended Plugin: <b> MonsterInsights </b>-
+                                <a href="#">Install </a></Install> | <a href="">Learn More</a> </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Site Health Status -->
+
+
+                    <div class="sitehealth">
+                        <h4>Site Health Status</h4>
+                        <div class="circle"> </div>
+                        <h6 class="good">Good</h6>
+                        <p>
+                            Your site’s health is looking good, but there are still some things you can do to improve its performance and security.
+                            <br>
+                            <br> Take a look at the 5 items on the
+                            <a href="#" target="_blank">Site health Screen.</a>
+                        </p>
+                    </div>
+
+
+                    <!--  WooCommerce-->
+
+
+                    <div class=woocommerce>
+                        <h4>WooCommerce Recent Reviews</h4>
+
+                        <p>There are no product reviews yet.</p>
+                    </div>
+
+
+
+                    <!-- activity -->
+                    <div class="activity">
+                        <h4>Activity</h4>
+
+                        <p>Recently Published <br> </p>
+                        <ul>
+                            <li>
+                                <span>Dec 15th, 8:44 am</span>
+                                <a href="#">Hello world!</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <!-- Right Part of DashBoard Page-->
+
+
+                <div class="sec2">
+
+                    <div class="quickdraft">
+
+                        <h4>Quick Draft</h4>
+
+
+                        <form action="/action_page.php">
+                            <label>Title</label><br>
+                            <input class="title" type="text" name="fname"><br><br>
+                            <label>Content</label><br>
+
+                            <input class="content" type="text" name="lname" placeholder="What's in your mind?"><br><br>
+
+                            <button class="savedraftbutton" type="submit" value="save draft"> Save Draft</button>
+                        </form>
+                    </div>
+
+
+                    <!-- Woocommerce status -->
+
+                    <div class="woocommercestatus">
+                        <h4>WooCommerce Status</h4>
+
+                        <i class="far fa-chart-bar">$ 0.00 <br>net sales this month</i><br>
+
+
+                    </div>
+                    <div class="table">
+                        <table style="width:100%;">
+                            <tr>
+                                <td> <i class="fas fa-bullseye"></i>0 orders <br> awaiting processing</td>
+                                <td><i class="fas fa-pause"></i>0 orders <br> on-hold
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fab fa-algolia"></i> 0 products <br> low in stock</td>
+                                <td><i class="fas fa-times-circle"></i>0 products <br> out of stock</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <div>
+
+            <nav class="navbar navbar-expand navbar-dark bg-dark ">
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav">
+                        <li class="toggle" id="navmenu" onclick="toggleMenu(),leftNavFunction()"><a href="#"><span class="icon"><img class="menuicone"src="menu.png" alt="" width="28" height="28" style="background-color:white; border-radius: 50px; margin-top: 10px;"></span></a></li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown"><img src="z.png" alt="" width="30" height="30"></a>
+                            <div class="dropdown-menu bg-primary">
+                                <a class="dropdown-item" href="#">About WordPress</a>
+                                <a class="dropdown-item" href="#">WordPress.org</a>
+                                <a class="dropdown-item" href="#">Documentation</a>
+                                <a class="dropdown-item" href="#">Support</a>
+                                <a class="dropdown-item" href="#">Feedback</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">intern</a>
+                            <div class="dropdown-menu bg-primary">
+                                <a class="dropdown-item" href="#">visit site</a>
+                                <a class="dropdown-item" href="#">visit store</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">0</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">New</a>
+                            <div class="dropdown-menu bg-primary">
+                                <a class="dropdown-item" href="#">Post</a>
+                                <a class="dropdown-item" href="#">Media</a>
+                                <a class="dropdown-item" href="#">Page</a>
+                                <a class="dropdown-item" href="#">Product</a>
+                                <a class="dropdown-item" href="#">Order</a>
+                                <a class="dropdown-item" href="#">Coupon</a>
+                                <a class="dropdown-item" href="#">User</a>
+                                <a class="dropdown-item" href="#">WPForms</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">WPForms</a>
+                            <div class="dropdown-menu bg-primary">
+                                <a class="dropdown-item" href="#">All Forms</a>
+                                <a class="dropdown-item" href="#">Add New</a>
+                                <a class="dropdown-item" href="#">Community</a>
+                                <a class="dropdown-item" href="#">Support</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Howdy, intern</a>
+                            <div class="dropdown-menu bg-primary">
+                                <a class="dropdown-item" href="#">intern</a>
+                                <a class="dropdown-item" href="#">Edit Profile</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <!--########### vertical menubar ##########-->
+
+
+
+
+
+        <div class="vertical">
+
+            <ul>
+                <li>
+                    <a href="#"> <span class="icon"><img src="dashboard.png" alt="" width="30" height="30" style="background-color:white; border-radius: 50px;"></span><span class="title">DashBoard</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><img src="z.jpg" alt="" ></span><span class="title">Flixx</span></a>
+                    <ul>
+                        <li><a href="">Upload Video</a></li>
+                        <li><a href="">Video List</a></li>
+                        <li><a href="">generes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><img src="play1.jpg" ></span><span class="title">Play</span></a>
+                    <ul>
+                        <li><a href="#">Upload Video</a></li>
+                        <li><a href="#">Video List(Option for Adding Tags/Keyword</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Add Categories</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><img src="twiter.png" ></span><span class="title">Subscription</span></a>
+                    <ul>
+                        <li><a href="#">Create Subscription</a></li>
+                        <li><a href="#">Subscription List</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><img src="ad.jpeg" ></span><span class="title">Advertisement</span></a>
+                    <ul>
+                        <li><a href="#">Flixx</a></li>
+                        <li><a href="#">Play</a></li>
+                        <li><a href="#">Home Page Banner</a></li>
+                        <li><a href="#">In Video Playing</a></li>
+                        <li><a href="#">Video Player Page</a></li>
+                        <li><a href="#">Keywords Targeting</a></li>
+                        <li><a href="#">Demographic & Geographic Targeting</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><img src="user.png"></span><span class="title">Users</span></a>
+                    <ul>
+                        <li><a href="#">User List</a></li>
+                        <li><a href="#">User Activity</a></li>
+                        <li><a href="#">User Reference</a></li>
+                        <li><a href="#">Use Preference</a></li>
+                        <li><a href="#">Export Users Data</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><img src="setting.png" alt="" ></span><span class="title">Setting</span></a>
+                    <ul>
+                        <li><a href="#">Payment Gateway</a></li>
+                        <li><a href="#">Player Function</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">-Privacy Policy</a></li>
+                        <li><a href="#">API (You Tube, Vimeo, Vevo, Daily Motion)</a></li>
+                        <li><a href="#">Mail</a></li>
+                        <li><a href="#">IMBD</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><img src="video.svg" alt="" ></span><span class="title">In vedio<br>(Adding Video)</span></a>
+                    <ul>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Vimeo</a></li>
+                        <li><a href="#">vevo</a></li>
+                        <li><a href="#">Daily Motion</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><img src="short.jpg" ></span><span class="title">Short video</span></a>
+                    <ul>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Tags</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">(Company/Political Party/words etc)</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><img src="notification.png"></span><span class="title">Notification</span></a>
+                    <ul>
+                        <li><a href="#">Firebase</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> <span class="icon"><img src="analytics.jpg" ></span><span class="title">Analytics</span></a>
+                </li>
+                <li>
+                    <a href="#"> <span class="icon"><img src="offer.png"></span><span class="title">Promotional Offer</span></a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript">
+        function toggleMenu() {
+            let vertical = document.querySelector('.vertical');
+            let toggle = document.querySelector('.toggle');
+            vertical.classList.toggle('active');
+            toggle.classList.toggle('active');
+
+        }
+
+        function leftNavFunction() {
+
+
+            let img = document.querySelector(".menuicone");
+            let changeDash = document.querySelector(".section");
+
+            let vertical = document.querySelector('.toggle')
+            if (vertical.classList.value == "toggle active") {
+                changeDash.style.width = "78%";
+                changeDash.style.left = "260px";
+                img.src = "closemenu.png ";
+            } else {
+                changeDash.style.width = "92%";
+                changeDash.style.left = "83px";
+                img.src = "menu.png ";
+            }
+        }
+    </script>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--min loads faster websites-->
+</body>
+
+</html>
