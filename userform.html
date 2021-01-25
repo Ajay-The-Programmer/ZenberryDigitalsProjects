@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- it will take bootstrap style for our project-->
+    <link rel="stylesheet" href="userform.css">
+    <script src="https://kit.fontawesome.com/f7b0edd311.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <h4>Add User</h4>
+        <button type="button" class="btn btn-primary "><i class="fas fa-chevron-circle-left"></i> Back</button>
+        <div class="card" style="border: none; background-color: none;">
+            <form class="user-form" style="padding: 0px;">
+
+                <div class="form-group row">
+                    <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" id="inputName" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputNumber" class="col-sm-2 col-form-label">Phone Number</label>
+                    <div class="col-lg-5">
+                        <input type="number" class="form-control" id="inputNumber" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputtext" class="col-sm-2 col-form-label">User Id</label>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" id="inputText" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputText" class="col-sm-2 col-form-label">UserType </label>
+                    <div class="col-lg-5">
+                        <div class="form-floating" style="display: flex; width: 535px; height: 40px;">
+                            <select class="form-select" style="width: 535px; height: 40px; background-color: rgba(89, 9, 92, 0.781); " id="floatingSelect" aria-label="Floating label select example">
+                          <option selected></option>
+                          <option value="1">Super Admin</option>
+                          <option value="2">Admin</option>
+                          <option value="3">Manager</option>
+                          <option value="3">Employee</option>
+                          <option value="3">Production House</option>
+                          <option value="3">Channel Partner</option>
+                          <option value="3">Content Creator</option>
+                        </select>
+
+
+
+                            <div class="dropdown" style="margin-left: 30px;">
+                                <button class=" badge badge-pill plus" onclick="permission(event)">+</button>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="form-group row " id="p1">
+                    <label for="" class="col-sm-2 col-form-label">Permission</label>
+                    <div class="col-lg-5">
+                        <input type="checkbox" value="permission" class="cbox">
+                        <label for=""><h6>Permission1</h6></label>
+                        <input type="checkbox" value="permission" class="cbox">
+                        <label for=""><h6>Permissio2</h6></label>
+                        <input type="checkbox" value="permission" class="cbox">
+                        <label for=""><h6>Permission3</h6></label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-lg-5">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+                    <div class="col-lg-5">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="">
+                    </div>
+                </div>
+                <button1 type="button" class="btn btn-primary btn-dark">Submit</button1>
+            </form>
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <script>
+        function permission(event) {
+            event.preventDefault();
+            let per = document.getElementById("p1");
+            console.log("hello");
+            let per2 = per.style.display;
+
+            if (per.style.display == "flex") {
+                console.log("1");
+                per.style.display = "none";
+
+            } else {
+                console.log("2");
+
+                per.style.display = "flex";
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

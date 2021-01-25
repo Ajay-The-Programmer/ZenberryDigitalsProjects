@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <script src="https://kit.fontawesome.com/f7b0edd311.js" crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- External CSS-->
+
+    <link rel="stylesheet" href="/home/ajaydevkar/F1_Intern/Final website/styles/style.css">
+
+    <link rel="stylesheet" href="/home/ajaydevkar/F1_Intern/Final website/styles/worldpresshome.css">
+    <link rel="stylesheet" href="/home/ajaydevkar/F1_Intern/Final website/styles/useradmin.css">
+
+
+    <!--it will override above styles if we want-->
+
+</head>
+
+<body>
+
+
+
+    <div class="vertpage">
+        <section class="section">
+
+            <div class="card" style="padding: 15px;">
+                <a href="../pages/adduser.html">
+                    <button type="button" class="btn btn-primary btn-lg header">+ Add User</button>
+                </a>
+                <div class="card-body" style="padding: 0px;">
+                    <nav class="navbar navbar1 justify-content-between" style="background-color: #212529; color: #fff;">
+                        <a>user details</a>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" id="search" onkeyup="searchUser()" type="search" placeholder="Search" aria-label="Search" style="background-color: #212529; color: #fff;">
+                            <div class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" style="background-color: #e91e63; color: #fff;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Filter
+                        </button>
+                                <div class="dropdown-menu fil1">
+                                    <button class="dropdown-item" type="button">Type 1</button>
+                                    <button class="dropdown-item" type="button">Type 2</button>
+                                    <button class="dropdown-item" type="button">Type 3</button>
+                                </div>
+                            </div>
+                        </form>
+                    </nav>
+                    <div class="table-responsive table1">
+                        <table class="table table-dark table-bordered" id="myTable2" style="margin:auto">
+                            <thead>
+                                <tr>
+                                    <th onclick="sortTable(1)" scope="col">User ID</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone Number</th>
+                                    <!-- <th scope="col">Ip Address</th>
+                                    <th onclick="sortTable(6)" scope="col">Location</th> -->
+                                    <th scope="col" style="text-align: center;">Option</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tablebody">
+
+
+
+                                <!-- js code-->
+
+
+                            </tbody>
+
+                        </table>
+
+
+
+        </section>
+
+
+
+        <!--###################### Horizontal navbar ########################################-->
+
+        <div>
+            <nav class="navbar navbar-expand fixed-top navbar-dark" style="background-color: #1C4E80">
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav ">
+                        <li class="toggle" id="navmenu" onclick="toggleMenu(),leftNavFunction()"><a href="#"><span
+                                    class="icon"><i class="fa fa-align-justify" alt="" width="30" height="30"
+                                        style="border-radius: 50px;  color: #ffffff; font-size: 25px;"></i></span></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown"><i class="fa fa-arrow-circle-down" width="30" height="30" style="border-radius: 50px; color: #ffffff; font-size: 20px; margin: auto; "></i></a>
+                            <div class="dropdown-menu" style="background: #1C4E80;">
+                                <a class="dropdown-item" href="#">About WordPress</a>
+                                <a class="dropdown-item" href="#">WordPress.org</a>
+                                <a class="dropdown-item" href="#">Documentation</a>
+                                <a class="dropdown-item" href="#">Support</a>
+                                <a class="dropdown-item" href="#">Feedback</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">intern</a>
+                            <div class="dropdown-menu" style="background: #1C4E80;">
+                                <a class="dropdown-item" href="#">visit site</a>
+                                <a class="dropdown-item" href="#">visit store</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">0</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">New</a>
+                            <div class="dropdown-menu" style="background: #1C4E80;">
+                                <a class="dropdown-item" href="#">Post</a>
+                                <a class="dropdown-item" href="#">Media</a>
+                                <a class="dropdown-item" href="#">Page</a>
+                                <a class="dropdown-item" href="#">Product</a>
+                                <a class="dropdown-item" href="#">Order</a>
+                                <a class="dropdown-item" href="#">Coupon</a>
+                                <a class="dropdown-item" href="#">User</a>
+                                <a class="dropdown-item" href="#">WPForms</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">WPForms</a>
+                            <div class="dropdown-menu" style="background: #1C4E80;">
+                                <a class="dropdown-item" href="#">All Forms</a>
+                                <a class="dropdown-item" href="#">Add New</a>
+                                <a class="dropdown-item" href="#">Community</a>
+                                <a class="dropdown-item" href="#">Support</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Howdy, intern <i class="fa fa-user-circle" width="30" height="30" style="border-radius: 50px; color: #ffffff; font-size: 20px; margin: auto; "></i></a>
+                            <div class="dropdown-menu" style="background: #1C4E80;">
+                                <a class="dropdown-item" href="#">intern</a>
+                                <a class="dropdown-item" href="#">Edit Profile</a>
+                                <a class="dropdown-item" href="#" onclick="logout()">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+
+
+        <!--########### vertical menubar ##########-->
+
+        <div class="vertical ">
+
+            <ul>
+                <li>
+                    <a href="DashBoard.html"> <span class="icon"><i class="fa fa-dashboard" alt="" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff;"></i></span><span class="title">DashBoard</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><i class="fa fa-youtube-play" width="30" height="30" alt=""
+                                style="border-radius: 50px; color: #ffffff;"></i></span><span class="title">Flixx</span></a>
+                    <ul>
+                        <li><a href="">Upload Video</a></li>
+                        <li><a href="">Video List</a></li>
+                        <li><a href="">generes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><i class="fa fa-play" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff; font-size: 29px;"></i></span><span class="title"> Play</span></a>
+                    <ul>
+                        <li><a href="#">Upload Video</a></li>
+                        <li><a href="#">Video List(Option for Adding Tags/Keyword</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Add Categories</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><i class="fa fa-th-large" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff;"></i></span><span class="title">Subscription</span></a>
+                    <ul>
+                        <li><a href="#">Create Subscription</a></li>
+                        <li><a href="#">Subscription List</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><i class="fa fa-adn" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff;"></i></span><span class="title">Advertisement</span></a>
+                    <ul>
+                        <li><a href="#">Flixx</a></li>
+                        <li><a href="#">Play</a></li>
+                        <li><a href="#">Home Page Banner</a></li>
+                        <li><a href="#">In Video Playing</a></li>
+                        <li><a href="#">Video Player Page</a></li>
+                        <li><a href="#">Keywords Targeting</a></li>
+                        <li><a href="#">Demographic & Geographic Targeting</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a onclick="panel()" href="userTable.html"> <span class="icon"><i class="fa fa-user" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff;"></i></span><span class="title">Users</span></a>
+                    <ul>
+                        <li><a href="#">User List</a></li>
+                        <li><a href="#">User Activity</a></li>
+                        <li><a href="#">User Reference</a></li>
+                        <li><a href="#">Use Preference</a></li>
+                        <li><a href="#">Export Users Data</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><i class="fa fa-cogs" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff; font-size: 17px;"></i></span><span class="title">Setting</span></a>
+                    <ul>
+                        <li><a href="#">Payment Gateway</a></li>
+                        <li><a href="#">Player Function</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">-Privacy Policy</a></li>
+                        <li><a href="#">API (You Tube, Vimeo, Vevo, Daily Motion)</a></li>
+                        <li><a href="#">Mail</a></li>
+                        <li><a href="#">IMBD</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><i class="fa fa-video-camera" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff; font-size:19px ;"></i></span><span class="title">In vedio</span></a>
+                    <ul>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Vimeo</a></li>
+                        <li><a href="#">vevo</a></li>
+                        <li><a href="#">Daily Motion</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><i class="fa fa-file-video-o" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff; font-size: 29px;"></i></span><span class="title">Short video</span></a>
+                    <ul>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Tags</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">(Company/Political Party/words etc)</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#"> <span class="icon"><i class="fa fa-warning" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff; font-size: 20px;"></i></span><span class="title">Notification</span></a>
+                    <ul>
+                        <li><a href="#">Firebase</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> <span class="icon"><i class="fa fa-font" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff; font-size: 28px;"></i></span><span class="title">Analytics</span></a>
+                </li>
+                <li>
+                    <a href="#"> <span class="icon"><i class="fa fa-coffee" width="30" height="30"
+                                style="border-radius: 50px; color: #ffffff; font-size: 19px;"></i></span><span class="title">Promotional Offer</span></a>
+                </li>
+            </ul>
+        </div>
+
+        </div>
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../javascript/dashboard.js"></script>
+
+        <script src="../javascript/api.js"></script>
+        <script src="../javascript/useradmin.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

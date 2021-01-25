@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h6>welcome</h6>
+
+</body>
+
+<script>
+    //Is the user authenticated?
+    if (sessionStorage.getItem('AuthenticationState') === null) {
+        window.open("postapi.html", "_self");
+    }
+    //Is their authentication token still valid?
+    else if (Date.now > new Date(sessionStorage.getItem('AuthenticationExpires'))) {
+        window.open("postapi.html", "_self");
+    } else {
+        //The user is authenticated and the authentication has not expired.
+        console.log("hello");
+    }
+</script>
+
+
+</html>

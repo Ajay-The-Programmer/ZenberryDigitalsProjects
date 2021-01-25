@@ -1,0 +1,93 @@
+.card {
+    margin-top: 15px;
+    background-color: #e2e1e1;
+    border: none;
+}
+
+.header {
+    margin-bottom: 15px;
+    width: 150px;
+    margin-left: 0%;
+}
+
+.navbar1 {
+    padding-left: 15px;
+    height: unset;
+}
+
+table td {
+    background-color: #212529;
+    color: #fff;
+}
+
+.dropdown-menu {
+    min-width: 100%;
+    background-color: #212529;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: gray;
+    color: #fff;
+}
+
+.fil1 button {
+    margin: 0;
+    padding: 10px;
+}
+
+.three button {
+    margin-right: 5px;
+}
+
+.select select {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width:767px) {
+    table thead {
+        display: none;
+    }
+    table tbody,
+    table tbody tr {
+        display: block;
+        width: 100%;
+    }
+    table tbody tr td::before {
+        content: attr(data-title);
+        display: block;
+    }
+    table tbody tr td {
+        display: block;
+        width: 50%;
+        float: left;
+    }
+    table tbody td {
+        display: block;
+        width: 50%;
+        float: left;
+    }
+    table tbody th {
+        width: 100%;
+        float: left;
+    }
+    table tbody tr {
+        margin-bottom: 16px;
+        clear: both;
+    }
+    table tbody td {
+        width: 100%;
+        float: left;
+    }
+    .end {
+        width: 100%;
+    }
+    td:hover {
+        background-color: rgb(52, 52, 52);
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            height: auto
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    <form id="myform">
+        <input type="text" name="username" />
+        <input type="password" name="password" />
+        <button type="submit">Submit</button>
+    </form> -->
+    <!-- <button id="post">post</button>
+    <div id="datashow" style="width: 100%; height: auto; background-color:gray; color:white;">
+
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Mobile</td>
+                    <td>Email</td>
+                    <td>userType</td>
+                    <td>Password</td>
+                </tr>
+            </thead>
+            <tbody id="tbldata">
+
+
+
+            </tbody>
+
+        </table>
+    </div> -->
+
+
+
+    <!-- <script>
+        document.getElementById("post").onclick = () => { -->
+    <!-- // e.preventDefault();
+            // let data = {
+                //         "name": "ajay",
+                //         "mobile": "9999999995",
+                //         "email": "abc5@gmail.com",
+                //         "enterId": "enter232",
+                //         "userType": "Admin",
+                //         "password": "devkarajay"
+                //     }
+                // console.log(e.target);
+                // let data = new URLSearchParams();
+                // for (const pair of new FormData(e.target)) {
+                    
+                    //     console.log(pair[0], pair[1]);
+                    //     data.append(pair[0], pair[1])
+        // }
+        //         let url = "http://174.138.35.211:8081/details"
+        //         fetch(url).then(res1 => {
+            //             return res1.json();
+            //         }).then(res2 => {
+                //             console.log(res2);
+                //             console.log(res2.length);
+                //             let tabledata;
+//             for (let i = 0; i < res2.length; i++) {
+    
+    //                 tabledata +=
+    //                     `<tr>
+        //                 <td> ${res2[i].id}</td> 
+        //                 <td>${res2[i].name} </td>
+        //                 <td>${res2[i].mobile}</td>
+        //                 <td>${res2[i].email}</td>
+        //                 <td>${res2[i].userType}</td>
+//                 <td>${res2[i].password}</td>
+//                 </tr>`;
+
+//             }
+//             document.getElementById("tbldata").innerHTML = tabledata;
+//         }).catch(error => console.log(error));
+
+
+
+//     }
+// </script> -->
+
+    <form action="" id="frm">
+
+        <input type="text" id="name" name="name" />
+        <input type="text" id="pass" name="pass" />
+        <input type="submit" id="sub" name="sub" />
+    </form>
+
+
+
+
+
+
+    <script>
+        var now = Date.now();
+        // var fourHoursLater = now.addHours(4);
+
+        // function Date.prototype.addHours(h) {
+
+        //         // how do I implement this?  
+
+        //     }
+        // LOGIN.js
+        document.getElementById("frm").onsubmit = (e) => {
+            e.preventDefault();
+            console.log("hii");
+            inputname = document.getElementById("name").value;
+            inputpassword = document.getElementById("pass").value;
+
+            console.log(inputname);
+            console.log(inputpassword);
+
+            // for (i in data.username) //to match username with provided array
+            // {
+            //     name = data.username[i];
+
+            //     for (i in data.password) {
+            //         pass = data.password[i];
+
+            if (inputname == "ajay" & inputpassword == "ajay") {
+                //The user has successfully authenticated. We need to store this information
+                //for the next page.
+                sessionStorage.setItem("AuthenticationState", "Authenticated");
+
+                //This authentication key will expire in 1 hour.
+                sessionStorage.setItem("AuthenticationExpires", Date.prototype.addHours = function() {
+                    this.setTime(this.getTime() + (h * 60 * 60 * 1000));
+                    return this;
+                })
+
+                //Push the user over to the next page.
+                window.open('welcome.html', '_self');
+            }
+            // }
+
+            if (inputname != "ajay" & inputpassword != "ajay") {
+                alert("Wrong Password");
+            }
+
+
+            //addHours to a date.
+            //Credit to: Kennebec
+            //https://stackoverflow.com/questions/1050720/adding-hours-to-javascript-date-object
+            Date.prototype.addHours = function(h) {
+                this.setTime(this.getTime() + (h * 60 * 60 * 1000));
+                return this;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

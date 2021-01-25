@@ -1,0 +1,178 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#mynav ul li:hover {
+    background-color: #cacaca;
+}
+
+#mynav ul li a:hover {
+    color: #000;
+}
+
+#mynav {
+    position: relative;
+    height: auto;
+}
+
+.navbar {
+    padding-left: 0;
+    height: 59px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white
+}
+
+#menu {
+    padding-left: 0.5rem;
+}
+
+a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.dropdown-menu a {
+    color: #ffffff;
+}
+
+.dropdown-menu a:hover {
+    background: #cacaca;
+}
+
+
+/*############ vertical menbar css style ###########*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.vertical {
+    width: 48px;
+    margin-top: 48px;
+    position: fixed;
+    background: #1C4E80;
+    border-right: 10px;
+    font-size: 20px;
+    transition: 0.5sec;
+    height: 100%;
+}
+
+.vertical ul li:hover {
+    width: 100%;
+}
+
+.vertical ul {
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+}
+
+.vertical ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.vertical ul li:hover {
+    background: #16406a;
+}
+
+.vertical ul li a {
+    align-items: center;
+    overflow: hidden;
+    font-family: arial;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 5px;
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+}
+
+.vertical ul li a .icon {
+    position: relative;
+    display: block;
+    margin-left: -9px;
+    padding-right: 10px;
+}
+
+.vertical ul li a .icon img {
+    font-size: 20px;
+}
+
+.vertical ul li a .title {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+.vertical ul li a:hover {
+    background: #cacaca;
+    color: #000;
+}
+
+.vertical ul ul {
+    position: absolute;
+    left: 100%;
+    width: 200px;
+    background: #1C4E80;
+    top: 0;
+    display: none;
+}
+
+.vertical ul ul a {
+    color: #ffffff;
+}
+
+.vertical ul .dropdown {
+    position: relative;
+}
+
+.vertical ul .dropdown:hover ul {
+    display: initial;
+    padding: .5rem 0;
+}
+
+.vertical ul ul a:hover {
+    background: #cacaca;
+    color: black;
+}
+
+.vertical.active {
+    width: 250px;
+}
+
+.vertical img {
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.vertpage {
+    height: 570px;
+    width: 100%;
+    position: relative;
+}
+
+.section {
+    background-color: #e2e1e1;
+    width: 92%;
+    height: 600px;
+    position: absolute;
+    left: 83px;
+    top: 50px;
+    margin-bottom: 100px;
+}
+
+#panel {
+    display: none;
+}

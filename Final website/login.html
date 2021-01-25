@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- it will take bootstrap style for our project-->
+    <link rel="stylesheet" href="styles/login.css">
+
+</head>
+
+<body class="signin-body">
+    <div class="container signin-container">
+        <div class="row">
+
+            <div class="col-md-4 m-auto">
+                <div class="card signin-card">
+
+                    <div class="card-block">
+
+                        <img src="https://static.thenounproject.com/png/2303078-200.png" class="img-fluid signin-img">
+                        <p class="userError"></p>
+                        <form class="sigin-form" id="logForm">
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="User ID">
+                                <p class="idError"></p>
+                            </div>
+                            <div class="form-group">
+
+                                <input type="password" class="form-control" id="userPassword" placeholder="Password">
+                                <p class="passError"></p>
+                            </div>
+
+                            <button type="submit" class="btn signin-btn btn-lg">Sign In</button>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember me <a href="#">Forgot Your Password?</a> </label>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+<script src="javascript/login.js"></script>
+<script src="javascript/api.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

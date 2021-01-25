@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="teststyle.css"></link>
+    <script src="https://kit.fontawesome.com/f7b0edd311.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body style="background-color: gray;">
+
+    <div class="container">
+        <div class="card" style=" background-image: radial-gradient(rgb(235, 109, 109), rgb(191, 185, 240), lightblue);">
+            <div class="card-body">
+                <p style="font-size: 25px;" class="text-center font-weight-bold">Upload Video</p>
+
+                <br>
+
+                <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label font-weight-bold">Title</label>
+                    <div class="input-group-lg  col-sm-10">
+                        <input type="text" class="form-control" id="">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label font-weight-bold">Description</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row  ">
+                    <label for="" id="content" class="col-sm-2 col-form-label font-weight-bold">Banner</label>
+                    <div class="col-sm-10 plus  duplicate0 ">
+                        <div class="custom-file" id="banner">
+                            <input type="file" class="custom-file-input">
+                            <label class="custom-file-label " for="">Upload Banner</label>
+                        </div>
+                        <div class="btn lg">
+                            <button id="but_add0" onclick="banner()" type="button" class="btn btn-success banner"><b>+</b></button>
+                        </div>
+                        <div class="btn lg">
+                            <button type="button" class="btn btn-dark banner"><i class="fa fa-camera"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group row duplicate">
+                    <label for="" id="number" type="number" class="col-sm-2 col-form-label font-weight-bold">Movies/webseries</label>
+                    <div class="input-group-lg  col-sm-10  ">
+                        <select id="inputState" onclick="web()" class="form-control">
+                  <option>Choose...</option>
+                  <option>Movies</option>
+                  <option  >web Series</option>
+                </select>
+                    </div>
+                </div>
+
+
+                <div class="form-group row duplicate">
+                    <label for="" id="number" type="number" class="col-sm-2 col-form-label font-weight-bold">Genres</label>
+                    <div class="input-group-lg  col-sm-10  ">
+                        <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>Romance</option>
+                  <option>Drama</option>
+                  <option>Family</option>
+                  <option>Reality</option>
+                  <option>Commedy</option>
+                  <option>Mythology</option>
+                  <option>Crime</option>
+                  <option>Action</option>
+                  <option>Biopic</option>
+                  <option>Science</option>
+                  <option>Horror</option>
+                  <option>Sport</option>
+                  <option>Musical</option>
+                  <option>Documentary</option>
+                  <option>Kids</option>
+                </select>
+                    </div>
+                </div>
+
+                <div class="form-group row duplicate">
+                    <label for="" id="number" type="number" class="col-sm-2 col-form-label font-weight-bold">Actor</label>
+                    <div class="input-group-lg  col-sm-10  ">
+                        <input type="text" class="form-control" id="">
+                        <div class="plus1">
+                            <div class="btn-lg">
+                                <button id="but_add" type="button" class="btn btn-success"><b>+</b></button>
+                            </div>
+                            <div class="btn lg">
+                                <button type="button" class="btn btn-dark"><i class="fa fa-camera"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group row duplicate1">
+                    <label for="" class="col-sm-2 col-form-label font-weight-bold">Director</label>
+                    <div class="input-group-lg  col-sm-10">
+                        <input type="text" class="form-control" id="">
+                        <div class="plus1">
+                            <div class="btn-lg">
+                                <button id="but_add1" type="button" class="btn btn-success"><b>+</b></button>
+                            </div>
+                            <div class="btn lg">
+                                <button type="button" class="btn btn-dark "><i class="fa fa-camera"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row duplicate2">
+                    <label for="" class="col-sm-2 col-form-label font-weight-bold">Producer</label>
+                    <div class="input-group-lg  col-sm-10">
+                        <input type="text" class="form-control" id="">
+                        <div class="plus1">
+                            <div class="btn-lg">
+                                <button id="but_add2" type="button" class="btn btn-success"><b>+</b></button>
+                            </div>
+                            <div class="btn lg">
+                                <button type="button" class="btn btn-dark "><i class="fa fa-camera"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row duplicate3">
+                    <label for="" class="col-sm-2 col-form-label font-weight-bold">Production House</label>
+                    <div class="input-group-lg  col-sm-10">
+                        <input type="text" class="form-control" id="">
+                        <div class="plus1">
+                            <div class="btn-lg">
+                                <button id="but_add3" type="button" class="btn btn-success"><b>+</b></button>
+                            </div>
+                            <div class="btn lg">
+                                <button type="button" class="btn btn-dark "><i class="fa fa-camera"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label font-weight-bold">Trailer</label>
+                    <div class="col-sm-10">
+                        <div class="custom-file" id="banner">
+                            <input type="file" class="custom-file-input">
+                            <label class="custom-file-label" for="">Upload Trailerr</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row duplicate4">
+                    <label for="" id="content" class="col-sm-2 col-form-label font-weight-bold">Place Video</label>
+                    <div class="col-sm-10 plus">
+                        <div class="custom-file" id="banner">
+                            <input type="file" class="custom-file-input">
+                            <label class="custom-file-label " for="">Upload Banner</label>
+                        </div>
+                        <div class="btn-lg" id="add">
+                            <!-- <button id="but_add4" type="button" class="btn btn-success "><b>+</b></button> -->
+                        </div>
+                        <div id="GFG" class="btn lg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label font-weight-bold">Slug</label>
+                    <div class="input-group-lg  col-sm-10">
+                        <input type="text" class="form-control" placeholder="www" id="">
+                    </div>
+                </div>
+
+                <br>
+                <button type="button" class="mx-auto d-block btn btn-primary btn-lg">Submit</button>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function Webseries() {
+            var myDiv = document.getElementById("GFG");
+
+            // creating button element  
+
+            var button = document.createElement('BUTTON');
+            button.style.marginTop = "-.5rem";
+            button.style.borderRadius = "50%";
+            button.style.backgroundColor = "#28a745"
+                // creating text to be 
+                //displayed on button 
+            var text = document.createTextNode("+");
+
+            // appending text to button 
+            button.appendChild(text);
+
+            // appending button to div 
+            myDiv.appendChild(button);;
+        }
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="test.js"></script>
+
+
+
+</body>
+
+</html>

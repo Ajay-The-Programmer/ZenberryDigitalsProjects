@@ -1,0 +1,41 @@
+.col-sm-10 input,
+.col-sm-10 textarea,
+#banner,
+#inputState {
+    width: 60%;
+}
+
+.input-group-lg,
+.plus,
+.plus1 {
+    display: flex;
+}
+
+.banner {
+    margin-top: -.5rem;
+    margin-left: .2rem;
+}
+
+button.btn-success,
+button.btn-dark {
+    border-radius: 50%;
+}
+
+@media(max-width:770px) {
+    .col-sm-10 input,
+    .col-sm-10 textarea,
+    #banner,
+    #inputState {
+        width: 100%;
+    }
+    .input-group-lg,
+    .plus {
+        display: unset;
+    }
+    .banner {
+        margin: unset;
+    }
+    .plus1 {
+        display: flex;
+    }
+}

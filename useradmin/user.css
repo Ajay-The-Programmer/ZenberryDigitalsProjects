@@ -1,0 +1,43 @@
+body.admin {
+    background: black;
+}
+
+body {
+    padding: 15px;
+}
+
+.container.content {
+    background-image: linear-gradient(135deg, rgba(63, 3, 104, 0.945), rgba(186, 13, 230, 0.9254901960784314));
+    margin-top: 8%;
+    padding: 15px;
+    color: white;
+}
+
+.card {
+    margin-top: 15px;
+    background-color: #212529;
+}
+
+.dropdown-menu {
+    min-width: 100%;
+    background-color: #212529;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: gray;
+    color: #fff;
+}
+
+.three button {
+    margin-right: 5px;
+}
+
+.select select {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}

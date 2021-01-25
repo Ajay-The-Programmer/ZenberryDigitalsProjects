@@ -1,0 +1,67 @@
+.container {
+    height: auto;
+    background-color: rgb(45, 11, 80);
+}
+
+h4 {
+    text-align: center;
+    color: white;
+}
+
+form.user-form,
+input {
+    padding-left: 30px;
+    background-color: rgb(45, 11, 80);
+    background-image: linear-gradient(rgb(45, 11, 80), rgba(112, 4, 85, 0.616));
+    background-clip: unset;
+    color: white;
+}
+
+.btn-dark {
+    margin-left: 400px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+input:hover {
+    background-color: grey;
+}
+
+option,
+select {
+    color: white;
+    background-color: black;
+}
+
+option:hover {
+    background-color: grey;
+}
+
+.dropdown-item {
+    background-color: black;
+    color: white;
+}
+
+.cbox {
+    margin-left: 15px;
+}
+
+.plus {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: rebeccapurple;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+div#p1 {
+    display: none;
+}
