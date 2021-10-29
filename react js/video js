@@ -1,0 +1,24 @@
+Tracks
+Tracks are used for displaying text information over a video, selecting different audio tracks for a video, or selecting different video tracks.
+
+
+const options = {
+      controls: true,
+      autoplay: true,
+      playsinline: true,
+      muted: true,
+      playbackRates: [0.5, 1, 1.5, 2],
+      aspectRatio: '16:9',
+      html5: {
+        vhs: {
+          enableLowInitialPlaylist: true,
+          overrideNative: true
+        },
+        nativeAudioTracks: false,
+        nativeVideoTracks: false,
+        nativeTextTracks: false
+      },
+      controlBar: {
+        pictureInPictureToggle: true
+      }
+});

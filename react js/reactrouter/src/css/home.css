@@ -1,0 +1,24 @@
+@media only screen and (max-width: 640px) {
+  #headerimg {
+    height: 205px;
+  }
+  #firstCard {
+    font-size: 5px;
+    width: 50%;
+  }
+  .card-content {
+    display: none;
+  }
+  .card .card-image .card-title {
+    font-size: 20px;
+    color: white;
+
+    font-weight: normal;
+  }
+  #card_row {
+    text-align: -webkit-center;
+  }
+}
+.pagetitle {
+  font-family: cursive;
+}
