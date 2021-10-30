@@ -1,0 +1,13 @@
+@media only screen and (max-width: 999px) {
+  nav .brand-logo {
+    left: 19%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  nav .brand-logo {
+    left: 19%;
+  }
+}
+.right {
+  margin-right: 7px;
+}

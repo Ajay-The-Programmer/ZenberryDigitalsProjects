@@ -19,7 +19,7 @@ function Signup() {
     });
 
     //it will push you on login page after registration done
-    history.push("/");
+    history.push("/login");
   }
   return (
     <>

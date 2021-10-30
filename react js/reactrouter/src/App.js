@@ -26,10 +26,10 @@ function App() {
       });
     } else {
       // setUserStatus(0);
-      console.log("else");
+      console.log("access else");
     }
-    console.log("hii");
-  });
+    console.log("debugging done");
+  }, [count]);
 
   //i am taking this for rerender bcz logout button only come when refresh the page but it a not working
   const changeNumber = () => {
@@ -42,10 +42,10 @@ function App() {
       <Navbar userStatus={userStatus} />
       <Switch>
         <Route exact path="/">
-          <Login changeNumber={changeNumber} />
-        </Route>
-        <Route path="/signup">
           <Signup />
+        </Route>
+        <Route path="/login">
+          <Login changeNumber={changeNumber} />
         </Route>
         <Route path="/home">
           <Home />

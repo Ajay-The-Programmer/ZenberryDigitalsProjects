@@ -27,7 +27,15 @@ function Login({ changeNumber }) {
           classes: "red",
         });
       }
+      // if (element.email) {
+
+      // }
     });
+
+    if (data.length < 1) {
+      alert("Please Sign-Up first");
+      e.target.value = "";
+    }
   }
 
   return (

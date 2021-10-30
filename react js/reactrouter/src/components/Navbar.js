@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import "../css/nav.css";
 
 function Navbar(props) {
   const history = useHistory();
@@ -20,7 +21,7 @@ function Navbar(props) {
           Blogger's
         </a>
 
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
+        <ul id="nav-mobile" className="right">
           {props.userStatus ? (
             <li>
               <button
@@ -35,10 +36,10 @@ function Navbar(props) {
           ) : (
             <>
               <li>
-                <Link to="/">Login</Link>
+                <Link to="/">Signup</Link>
               </li>
               <li>
-                <Link to="/signup">Signup</Link>
+                <Link to="/login">Login</Link>
               </li>
             </>
           )}
