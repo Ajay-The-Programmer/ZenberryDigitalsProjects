@@ -18,28 +18,28 @@ function App() {
   // window.onload = window.localStorage.clear("reduxState");
 
   //it will access the value of user is logedin or not from localstorage
-  useEffect(() => {
-    if (Object.keys(persistedState).length != 0) {
-      persistedState.authReducer.dList.map((e) => {
-        setUserStatus(e.isUser);
-        console.log(e.isUser);
-      });
-    } else {
-      // setUserStatus(0);
-      console.log("access else");
-    }
-    console.log("debugging done");
-  }, [count]);
+  // useEffect(() => {
+  //   if (Object.keys(persistedState).length != 0) {
+  //     persistedState.authReducer.dList.map((e) => {
+  //       setUserStatus(e.isUser);
+  //       console.log(e.isUser);
+  //     });
+  //   } else {
+  //     // setUserStatus(0);
+  //     console.log("access else");
+  //   }
+  //   console.log("debugging done");
+  // }, [count]);
 
   //i am taking this for rerender bcz logout button only come when refresh the page but it a not working
-  const changeNumber = () => {
-    setCount(count + 1);
+  const changeNumber = (no) => {
+    setCount(no);
     console.log("changeName");
   };
 
   return (
     <BrowserRouter>
-      <Navbar userStatus={userStatus} />
+      <Navbar userStatus={count} />
       <Switch>
         <Route exact path="/">
           <Signup />

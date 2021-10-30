@@ -21,6 +21,7 @@ function Login({ changeNumber }) {
         //Set True Value after email and  password  match
         dispatch(login());
         history.push("/home");
+        changeNumber(1);
       } else {
         window.M.toast({
           html: `Incorect email or password please check`,
@@ -78,7 +79,7 @@ function Login({ changeNumber }) {
             }}
           />
         </div>
-        <button type="submit" className="btn blue" onClick={changeNumber}>
+        <button type="submit" className="btn blue">
           Login
         </button>
       </form>
