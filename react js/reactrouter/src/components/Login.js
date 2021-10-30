@@ -34,10 +34,8 @@ function Login({ changeNumber }) {
 
     if (data.length < 1) {
       alert("Please Sign-Up first");
-      // console.log(e.target.value.input);
       setEmail("");
       setPassword("");
-      // e.target.value.email = "";
     }
   }
 
@@ -74,7 +72,7 @@ function Login({ changeNumber }) {
             className="validate"
             placeholder="password"
             required
-            value={}
+            value={password}
             onChange={(e) => {
               setPassword(e.target.value);
             }}
