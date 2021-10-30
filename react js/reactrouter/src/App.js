@@ -39,7 +39,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar userStatus={count} />
+      <Navbar userStatus={count} changeNumber={changeNumber} />
       <Switch>
         <Route exact path="/">
           <Signup />

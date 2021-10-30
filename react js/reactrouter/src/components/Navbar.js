@@ -11,7 +11,8 @@ function Navbar(props) {
   const onHandleSignOut = () => {
     localStorage.clear("reduxState");
     history.push("/");
-    window.history.forward();
+    props.changeNumber(0);
+    // window.history.forward();
   };
 
   return (
