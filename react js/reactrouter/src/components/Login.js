@@ -34,7 +34,10 @@ function Login({ changeNumber }) {
 
     if (data.length < 1) {
       alert("Please Sign-Up first");
-      e.target.value = "";
+      // console.log(e.target.value.input);
+      setEmail("");
+      setPassword("");
+      // e.target.value.email = "";
     }
   }
 
@@ -59,6 +62,7 @@ function Login({ changeNumber }) {
             className="validate"
             placeholder="email"
             required
+            value={email}
             onChange={(e) => {
               setEmail(e.target.value);
             }}
@@ -70,6 +74,7 @@ function Login({ changeNumber }) {
             className="validate"
             placeholder="password"
             required
+            value={}
             onChange={(e) => {
               setPassword(e.target.value);
             }}
