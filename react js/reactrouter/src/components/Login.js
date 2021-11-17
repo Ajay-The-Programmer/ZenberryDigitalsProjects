@@ -20,6 +20,7 @@ function Login({ changeNumber }) {
 
         //Set True Value after email and  password  match
         dispatch(login());
+
         history.push("/home");
         changeNumber(1);
       } else {

@@ -1,5 +1,5 @@
 import { BrowserRouter, Route } from "react-router-dom";
-import { Switch } from "react-router";
+import { Switch, useHistory } from "react-router";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import React, { useState } from "react";
@@ -10,14 +10,16 @@ import { useEffect } from "react";
 function App() {
   const [count, setCount] = useState(0);
   const [userStatus, setUserStatus] = useState();
+  const history = useHistory();
 
   const persistedState = localStorage.getItem("reduxState")
     ? JSON.parse(localStorage.getItem("reduxState"))
     : {};
 
   // window.onload = window.localStorage.clear("reduxState");
+  // window.location.reload(history.push("/login"));
 
-  //it will access the value of user is logedin or not from localstorage
+  // it will access the value of user is logedin or not from localstorage
   // useEffect(() => {
   //   if (Object.keys(persistedState).length != 0) {
   //     persistedState.authReducer.dList.map((e) => {
@@ -29,9 +31,9 @@ function App() {
   //     console.log("access else");
   //   }
   //   console.log("debugging done");
-  // }, [count]);
+  // });
 
-  //i am taking this for rerender bcz logout button only come when refresh the page but it a not working
+  //it is used to change for logout login on nav buttton
   const changeNumber = (no) => {
     setCount(no);
     console.log("changeName");
