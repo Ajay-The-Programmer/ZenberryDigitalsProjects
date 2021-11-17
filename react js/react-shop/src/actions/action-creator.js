@@ -1,3 +1,5 @@
+import axios from "axios"
+
 // export const anotherName = (name) => {
 
 //     return {
@@ -10,9 +12,9 @@
 export const anotherName = () => {
 
     return async (dispatch) => {
-        const data = await fetch(`https://jsonplaceholder.typicode.com/users`)
-        const result = await data.json()
-        dispatch({ type: "CHANGE_NAME", payload: result[0].name })
+        const res = await axios.get(`https://jsonplaceholder.typicode.com/users`)
+        // const result = data.json()
+        dispatch({ type: "CHANGE_NAME", payload: res.data[0].name })
 
     }
 
