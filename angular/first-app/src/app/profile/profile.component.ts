@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ProfileComponent{
 
   name:string='ajay';
-  salary:number=100;
+  salary:number=50;
   age:number= 25;
   status:string='coder';
+  inputValue:string='Ajay Devkar'
 
   color:string='btn blue'
   isDisable:boolean=true
@@ -20,6 +21,12 @@ export class ProfileComponent{
       this.isDisable=false;
     }, 3000);
   }
+
+//  changeName(e:any) {
+
+//   this.inputValue=e.target.value;
+    
+//   }
 
 
 

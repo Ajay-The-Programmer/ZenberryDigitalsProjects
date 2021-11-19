@@ -1,0 +1,23 @@
+
+
+if you want to fire some event like onClick so you have to use just in bracket (click) like that not onClick.
+[] you can use bracket for proprty binding only when you want to assign it dynamic value. like [value]='inputValue' ........inputValue:string='ajay'  --->this we are creating
+[()]---> This is called banana in the box
+
+
+--------------------------------------------------------------
+		this is If and Else Condition
+
+
+<h3 *ngIf="salary > 50; else lowsal">party to banti hai</h3>
+
+
+<ng-template #lowsal> <h3>your salary is so low</h3></ng-template>
+--------------------------------------------------------------
+
+
+<input
+  type="text"
+  [value]="inputValue"   ---->>>This is called Property Binding
+  (input)="inputValue = $any($event.target).value"   ----------->>>This is Called Event Binding
+/>

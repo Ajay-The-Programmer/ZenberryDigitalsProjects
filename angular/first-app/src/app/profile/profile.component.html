@@ -4,3 +4,15 @@
 </h1>
 
 <button [class]="color" [disabled]="isDisable">Click Here</button>
+
+<input
+  type="text"
+  [value]="inputValue"
+  (input)="inputValue = $any($event.target).value"
+/>
+
+<h3>{{ inputValue }}</h3>
+
+<h3 *ngIf="salary > 50; else lowsal">party to banti hai</h3>
+
+<ng-template #lowsal> <h3>your salary is so low</h3></ng-template>
