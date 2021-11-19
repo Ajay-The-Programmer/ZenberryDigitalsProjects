@@ -16,3 +16,9 @@
 <h3 *ngIf="salary > 50; else lowsal">party to banti hai</h3>
 
 <ng-template #lowsal> <h3>your salary is so low</h3></ng-template>
+
+<ul>
+  <li>
+    <h2 *ngFor="let f of fruits; index as i">{{ i }} {{ f }}</h2>
+  </li>
+</ul>

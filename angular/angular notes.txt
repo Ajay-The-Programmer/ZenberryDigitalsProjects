@@ -15,9 +15,21 @@ if you want to fire some event like onClick so you have to use just in bracket (
 <ng-template #lowsal> <h3>your salary is so low</h3></ng-template>
 --------------------------------------------------------------
 
+			For Loop/map
+			fruits:string[]=['apple','apple','apple','apple']
+<ul>
+  <li>
+    <h2 *ngFor="let f of fruits; index as i">{{ i }}{{ f }}</h2>
+  </li>
+</ul>
+--------------------------------------------------------------
+
 
 <input
   type="text"
   [value]="inputValue"   ---->>>This is called Property Binding
   (input)="inputValue = $any($event.target).value"   ----------->>>This is Called Event Binding
 />
+
+--------------------------------------------------------------
+

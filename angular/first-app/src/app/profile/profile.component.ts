@@ -12,6 +12,7 @@ export class ProfileComponent{
   age:number= 25;
   status:string='coder';
   inputValue:string='Ajay Devkar'
+  fruits:string[]=["apple","banana","mango","orange"]
 
   color:string='btn blue'
   isDisable:boolean=true
