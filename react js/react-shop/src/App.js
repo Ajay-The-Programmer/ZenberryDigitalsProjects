@@ -1,14 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { connect } from "react-redux";
-import { anotherName } from './actions/action-creator'
+import { anotherName } from "./actions/action-creator";
 
 function App(props) {
   console.log(props);
   return (
-    <div className="App">
+    <div className='App'>
       <h1>My name is {props.myname}</h1>
-      <button onClick={() => { props.changeName() }}>ChangeName</button>
+      <button
+        onClick={() => {
+          props.changeName();
+        }}>
+        ChangeName
+      </button>
     </div>
   );
 }
