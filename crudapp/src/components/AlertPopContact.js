@@ -22,8 +22,6 @@ export default function AlertPopContact({ confirmDelete, setConfirmDelete, produ
     localStorage.setItem("products", JSON.stringify(filterData));
     setProducts(filterData);
 
-    //var filterContacts = rows.filter((item) => item.contactId !== delID);
-    //setRows(filterContacts);
     setConfirmDelete(false);
   };
   const handleNo = () => {

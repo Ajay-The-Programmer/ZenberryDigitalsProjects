@@ -5,20 +5,17 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
-// import ProgressBar from "../UI/ProgressBar";
 import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import DeleteIcon from "@material-ui/icons/Delete";
 import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
-// import { CKEditor } from 'ckeditor4-react';
 import Divider from "@material-ui/core/Divider";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Table from "@material-ui/core/Table";
 import Input from "@material-ui/core/Input";
 import FormControl from "@material-ui/core/FormControl";
-// import Autocomplete from "@material-ui/lab/Autocomplete";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
@@ -28,15 +25,12 @@ import Paper from "@material-ui/core/Paper";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import AddIcon from "@material-ui/icons/Add";
 import Checkbox from "@material-ui/core/Checkbox";
-// import { getContacts, createContacts, deleteContactByID, updateContactByID } from "./contacts.helpers";
 import { Snackbar } from "@material-ui/core";
 import AddCircleSharpIcon from "@material-ui/icons/AddCircleSharp";
 import { v4 as uuid } from "uuid";
 
-// import EmptyEstimatesDialog from "../UI/EmptyEstimatesDialog";
 import EditIcon from "@material-ui/icons/Edit";
-// import SimpleBackdrop from "../UI/SimpleBackdrop";
-// import AlertPopContact from "./AlertPopContact";
+
 import Alert from "@material-ui/lab/Alert";
 import { useForm, Controller } from "react-hook-form";
 import AlertPopContact from "./AlertPopContact";
@@ -72,26 +66,31 @@ export default function Product() {
   const [createdDate, setCreatedDate] = useState();
   const [id, setId] = useState(uuid());
 
-  // const [delID, setDelId] = useState("");
   const [confirmDelete, setConfirmDelete] = useState(false);
-  // const [openSnackbar, setOpenSnackbar] = React.useState(false);
-  // const [delLoading, setDelLoading] = useState(false);
+
   const [isBtnDisbl, setIsBtnDisbl] = useState(true);
-  // const [wantToCallGet, setWantToCallGet] = useState(true);
 
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
       return;
     }
-    // setOpenSnackbar(false);
   };
   const handleUpdate = (e, row) => {
-    /* this function used for open toggle */
     commonToggle(true);
     setIsBtnDisbl(false); //
-    /* reset is method of useForm it is used for returning data to form */
-    reset(row);
+    let temp = {
+      productId: row.productId,
+      details: row.details,
+      image: "",
+      price: row.price,
+      productName: row.productName,
+      quantity: row.quantity,
+      totalPrice: row.totalPrice,
+      createdDate: row.createdDate,
+    };
+    reset(temp);
   };
+
   /* Form Validation */
   const {
     handleSubmit,
@@ -114,7 +113,7 @@ export default function Product() {
       console.log("items", items);
     }
   }, []);
-  //////////////  Delete Contacts ////////////////////
+
   const [deleteProductId, setDeleteProductId] = useState();
   const handleDeleteIcon = (e, productId) => {
     console.log("productId", productId);
@@ -169,15 +168,8 @@ export default function Product() {
     });
     localStorage.setItem("products", JSON.stringify(products));
 
-    // let productId = productData.productId;
-    /*deleting contactId of this object  */
-    // delete productData["productId"];
-    // updateContactByID(contactId, contactDetail, setWantToCallGet); //API call For Update
-    // setWantToCallGet(true);
-
     commonToggle(false);
-    // localStorage.setItem("products", JSON.stringify(products));
-    // let row = {};
+
     reset();
     setIsBtnDisbl(false); //By defualt for showing save button
   };
@@ -207,7 +199,7 @@ export default function Product() {
                     control={control}
                     rules={{ required: true }}
                     className='input'
-                    render={({ field }) => <TextField {...field} variant='outlined' label='Image' className={classes.textField} />}
+                    render={({ field }) => <TextField {...field} type='file' variant='outlined' className={classes.textField} />}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -274,7 +266,7 @@ export default function Product() {
                     control={control}
                     rules={{ required: false }}
                     className='input'
-                    render={({ field }) => <TextField {...field} type='date' label='Creat Date' variant='outlined' className={classes.textField} />}
+                    render={({ field }) => <TextField {...field} type='date' variant='outlined' className={classes.textField} />}
                   />
                 </Grid>
 
@@ -303,7 +295,7 @@ export default function Product() {
         </div>
         <div style={{ marginTop: "19px" }}>
           <React.Fragment>
-            {products.length === 0 ? ( //if contacts are empty then empty msg is shown
+            {products.length === 0 ? (
               <TableContainer component={Paper}>
                 <Table className={classes.table} size='small'>
                   <TableHead>
@@ -318,7 +310,7 @@ export default function Product() {
                 <Table className={classes.table} size='small'>
                   <TableHead>
                     <TableRow>
-                      <TableCell>
+                      <TableCell width={"10%"}>
                         <strong>Image</strong>
                       </TableCell>
                       <TableCell>
@@ -347,7 +339,9 @@ export default function Product() {
                   <TableBody>
                     {products.map((row, index) => (
                       <TableRow key={index}>
-                        <TableCell>{row.image}</TableCell>
+                        <TableCell>
+                          <img src={row.image} width='50px' height='50px' />
+                        </TableCell>
                         <TableCell component='th' scope='row'>
                           {row.productName}
                         </TableCell>
